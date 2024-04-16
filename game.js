@@ -85,7 +85,7 @@ function clickMe(lbl, nums) {
     elm.addEventListener("click", alerter(lbl));
     if (gamestarter) {
         if (demomodus === false) {
-            document.body.style.backgroundColor = "blue";
+            document.body.style.backgroundColor = "#011F3F";
             colorbuttonpicker("Deze kilk op " + lbl + " was tijdens play mode ! ", '.boven');
             colorbuttonpicker(nums, '.onder');
 
@@ -152,7 +152,7 @@ function demoMode() {
             setTimeout(playNext, timing);
         } else {
             setTimeout(function () {
-                document.body.style.backgroundColor = "blue";
+                document.body.style.backgroundColor = "#011F3F";
                 colorbuttonpicker(" jou beurt !", '.boven');
                 demomodus = false;
             }, timing);
