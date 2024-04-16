@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Simon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+        <button onclick="startCountdown();" type="button" id="button">STaRT GaMe</button>
+        <div class="countdown" id="countdown">3</div>
+        <div class="row">
+
+            <div type="button" onclick="clickMe('green',2)" id="green" class="btn green">
+
+            </div>
+
+            <div type="button" onclick="clickMe('red',4)" id="red" class="btn red">
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div type="button" onclick="clickMe('yellow',1)" id="yellow" class="btn yellow">
+
+            </div>
+            <div type="button" onclick="clickMe('blue',3)" id="blue" class="btn blue">
+
+            </div>
+
+        </div>
+        <h1 class="boven" id="level-title">Ready ?</h1>
+
+        <h1 class="onder" id="level-title"></h1>
+    </div>
+
+    <div>
+        <div class="volume-container">
+            <i class="fas fa-volume-up volume-icon" onclick="toggleMute()"></i>
+
+            <input type="range" min="0" max="1" step="0.01" value="1" class="volume-slider" id="volumeSlider">
+        </div>
+
+
+
+        <p id="pi">test</p>
+    </div>
+    <footer>
+        Made with ❤️ in  Neerwinge.
+
+    </footer>
+
+    <script src="game.js"></script>
+
+
+</body>
+
+</html>
